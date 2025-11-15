@@ -200,7 +200,6 @@ class ClickHouseClient:
                 name
             FROM system.tables
             WHERE database = {database_expr}
-                AND position('MergeTree' IN engine) > 0
                 AND engine NOT IN ('MaterializedView', 'Dictionary')
                 AND name != 'schema_migrations'
             ORDER BY name
