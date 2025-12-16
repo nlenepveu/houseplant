@@ -17,7 +17,7 @@ classifiers = [
 dependencies = [
   "clickhouse-driver >= 0.2.9, < 0.3",
   "pyyaml >= 6.0.2, < 6.1",
-  "typer >= 0.14.0, < 0.15",
+  "typer >= 0.15.0, < 1.0",
   "python-dotenv >= 1.0.1, < 1.1",
 ]
 
