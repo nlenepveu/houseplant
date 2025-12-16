@@ -297,6 +297,12 @@ production:
 
         self.console.print("✨ Schema migrations loaded successfully!")
 
+    def db_schema_dump(self):
+        """Dump the current database schema to ch/schema.sql."""
+        with self.console.status("[bold green]Dumping database schema..."):
+            self.update_schema()
+        self.console.print("✨ Schema dumped to ch/schema.sql")
+
     def update_schema(self):
         """Update the schema file with the current database schema."""
 
